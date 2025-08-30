@@ -34,8 +34,6 @@ public class RabbitMQConfig {
         return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
     }
 
-    // --- ADICIONE ESTES DOIS BEANS ---
-
     /**
      * Bean que define o conversor de mensagens para o formato JSON.
      * @return Um conversor que usa a biblioteca Jackson.
